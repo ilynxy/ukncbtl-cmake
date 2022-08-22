@@ -53,12 +53,22 @@ set(PROJECT_SOURCES
   ${PROJECT_SOURCES_DIR}/TapeView.cpp
   ${PROJECT_SOURCES_DIR}/ToolWindow.cpp
 
+  # i don't know how to force CMake use *.xml as *.manifest, see workaround below
+  #${PROJECT_SOURCES_DIR}/manifest.xml
+
   ${PROJECT_SOURCES_DIR}/res/UKNCBTL.rc
+)
+
+# WORKAROUND: how to force cmake use .xml as .manifest?
+configure_file(
+  ${PROJECT_SOURCES_DIR}/manifest.xml ${PROJECT_NAME}.manifest
+  COPYONLY
 )
 
 add_executable(${PROJECT_NAME}
   ${PROJECT_HEADERS}
   ${PROJECT_SOURCES}
+  ${PROJECT_NAME}.manifest
 )
 
 target_include_directories(${PROJECT_NAME}
