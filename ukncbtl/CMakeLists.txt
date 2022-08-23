@@ -76,9 +76,8 @@ target_include_directories(${PROJECT_NAME}
 )
 
 #target_compile_options(${PROJECT_NAME} PRIVATE -Wall -Wextra -Wconversion -Wsign-conversion)
-
-set_target_properties(
-  ${PROJECT_NAME} PROPERTIES WIN32_EXECUTABLE 1
+set_target_properties(${PROJECT_NAME} 
+  PROPERTIES WIN32_EXECUTABLE 1
 )
 
 target_link_libraries(${PROJECT_NAME} 
