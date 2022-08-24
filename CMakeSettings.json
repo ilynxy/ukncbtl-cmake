@@ -75,8 +75,7 @@
       "cmakeCommandArgs": "",
       "buildCommandArgs": "",
       "ctestCommandArgs": "",
-      "inheritEnvironments": [ "clang_cl_x86" ],
-      "variables": []
+      "inheritEnvironments": [ "clang_cl_x86" ]
     },
     {
       "name": "x86-Clang-Release",
@@ -87,8 +86,7 @@
       "cmakeCommandArgs": "",
       "buildCommandArgs": "",
       "ctestCommandArgs": "",
-      "inheritEnvironments": [ "clang_cl_x86" ],
-      "variables": []
+      "inheritEnvironments": [ "clang_cl_x86" ]
     }
   ]
 }
