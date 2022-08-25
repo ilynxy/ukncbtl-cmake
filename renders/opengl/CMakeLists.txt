@@ -15,7 +15,7 @@ set(LIBRARY_SOURCES
   ${LIBRARY_SOURCES_DIR}/stdafx.h
   ${LIBRARY_SOURCES_DIR}/stdafx.cpp
   ${LIBRARY_SOURCES_DIR}/${PROJECT_NAME}.cpp
-  ${LIBRARY_SOURCES_DIR}/${PROJECT_NAME}.def
+  ../render-exports.def
 )
 
 
