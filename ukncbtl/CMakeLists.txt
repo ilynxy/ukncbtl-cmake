@@ -5,6 +5,8 @@ project(ukncbtl
   VERSION 1.0.599.0
 )
 
+set(CMAKE_RC_FLAGS "--use-temp-file")
+
 set(PROJECT_HEADERS_DIR src/ukncbtl/emulator)
 set(PROJECT_HEADERS
   ${PROJECT_HEADERS_DIR}/emubase/Board.h
@@ -76,6 +78,10 @@ target_include_directories(${PROJECT_NAME}
 )
 
 #target_compile_options(${PROJECT_NAME} PRIVATE -Wall -Wextra -Wconversion -Wsign-conversion)
+target_link_options(${PROJECT_NAME}
+  PRIVATE "-municode"
+)
+
 set_target_properties(${PROJECT_NAME} 
   PROPERTIES WIN32_EXECUTABLE 1
 )
