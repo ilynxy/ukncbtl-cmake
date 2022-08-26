@@ -1,6 +1,7 @@
 EXPORTS
-	RenderInit
-	RenderDone
-	RenderEnumModes
-	RenderSelectMode
-	RenderDraw
+  RenderInit
+  RenderDone
+  RenderEnumModes
+  RenderSelectMode
+  RenderDraw
+  RenderVSync
