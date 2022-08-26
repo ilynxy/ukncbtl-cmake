@@ -1,6 +1,8 @@
 [submodule "ukncbtl/src/ukncbtl"]
 	path = ukncbtl/src/ukncbtl
 	url = git@github.com:ilynxy/ukncbtl.git
+	branch = main
 [submodule "ukncbtl-renders/source/ukncbtl-renders"]
 	path = renders/src/ukncbtl-renders
 	url = git@github.com:ilynxy/ukncbtl-renders.git
+	branch = main
