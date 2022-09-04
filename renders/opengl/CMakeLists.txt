@@ -33,7 +33,7 @@ target_compile_definitions(${PROJECT_NAME}
 # )
 
 target_link_libraries(${PROJECT_NAME} 
-  PRIVATE OpenGL32.lib
+  PRIVATE opengl32.lib
 )
 
 target_include_directories(${PROJECT_NAME} PRIVATE
